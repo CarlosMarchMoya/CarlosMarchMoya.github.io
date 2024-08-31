@@ -21,22 +21,24 @@ header {
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
+    text-align: center;
 }
 
-header .header-container {
+.header-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-header .header-container .profile-pic {
-    width: 120px;
+.profile-pic {
+    width: 200px;
     border-radius: 50%;
     margin-right: 20px;
+    padding: 30px;
 }
 
 header h1 {
     margin: 0;
-    padding: 0;
     font-size: 36px;
 }
 
@@ -45,24 +47,22 @@ header p {
     margin: 5px 0;
 }
 
-header nav ul {
+/* Navigation Styles */
+nav ul {
+    display: flex;
     padding: 0;
     list-style: none;
     margin: 0;
-    display: flex;
+    gap: 15px;
 }
 
-header nav ul li {
-    margin-right: 20px;
-}
-
-header nav ul li a {
+nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
     color: #e8491d;
 }
 
@@ -98,4 +98,38 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.social-icons a {
+    color: inherit;
+    margin: 0 15px;
+}
+
+.social-icons a:hover {
+    color: inherit;
+}
+
+/* Specific Icon Colors */
+.icon-linkedin {
+    color: #0077b5;
+}
+
+.icon-github {
+    color: #333;
+}
+
+.icon-scholar {
+    color: #4caf50;
+}
+
+.icon-email {
+    color: #d44638;
 }
